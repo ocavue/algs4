@@ -3,17 +3,17 @@ sex -ex
 echo "entrypoint"
 file=$1
 
-print "Compiling"
+echo "Compiling"
 javac-algs4 $file
 
-print "Executing"
+echo "Executing"
 java-algs4 $file
 
-print "Finding bug"
+echo "Finding bug"
 findbugs-algs4 $file 
 pmd-algs4 $file 
 
-print "Checking style"
+echo "Checking style"
 checkstyle-algs4 $file 
 
 
