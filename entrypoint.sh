@@ -1,7 +1,7 @@
 set -e
 
-echo ">>>>>>>>>>    entrypoint  <<<<<<<<<<"
 file=$1
+echo $file
 
 echo ">>>>>>>>>>    Compiling   <<<<<<<<<<"
 javac-algs4 $file
