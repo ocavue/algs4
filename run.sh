@@ -1,1 +1,1 @@
-docker exec --volumn .:/usr/src/algs4 ocavue/algs4 $1
+$(which docker) run -a stderr -a stdout --volume $(PWD):/usr/src/algs4 ocavue/algs4 

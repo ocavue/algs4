@@ -1,5 +1,6 @@
 sex -ex
 
+echo "entrypoint"
 file=$1
 
 print "Compiling"
