@@ -1,0 +1,1 @@
+docker exec --volumn .:/usr/src/algs4 ocavue/algs4 $1
