@@ -32,6 +32,7 @@ RUN curl -O "https://algs4.cs.princeton.edu/linux/checkstyle.zip" \
     && mv checkstyle-algs4 /usr/local/bin
 
 WORKDIR /usr/src/algs4
+COPY entrypoint.sh entrypoint.sh
 COPY HelloWorld.java HelloWorld.java
 ENTRYPOINT ["bash", "entrypoint.sh"]
 CMD ["HelloWorld.java"]
