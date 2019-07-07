@@ -13,7 +13,7 @@ java-algs4 $base
 # findbugs-algs4 $file
 # pmd-algs4 $file
 
-# echo ">>>>>>>>>> Checking style <<<<<<<<<<"
-# checkstyle-algs4 $file
+echo ">>>>>>>>>> Checking style <<<<<<<<<<"
+checkstyle-algs4 $file
 
 
