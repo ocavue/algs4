@@ -1,12 +1,18 @@
 FROM openjdk:8
 
-WORKDIR /tmp/algs4
+
+WORKDIR /usr/local
+
+RUN mkdir algs4 && chmod 755 algs4
+
+WORKDIR /usr/local/algs4
+
 
 RUN curl -O "https://algs4.cs.princeton.edu/code/algs4.jar" \
     && curl -O "https://algs4.cs.princeton.edu/linux/javac-algs4" \
     && curl -O "https://algs4.cs.princeton.edu/linux/java-algs4" \
     && chmod 755 javac-algs4 java-algs4 \
-    && mv algs4.jar /usr/local/bin \
+    # && mv algs4.jar /usr/local/bin \
     && mv javac-algs4 /usr/local/bin \
     && mv java-algs4 /usr/local/bin
 
