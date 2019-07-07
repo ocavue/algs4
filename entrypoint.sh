@@ -1,10 +1,7 @@
 set -e
 
-# tail -f /dev/null
-
 file=$1 # Hello.java
 base=$(basename $file .java) # Hello
-echo $file
 
 echo ">>>>>>>>>>    Compiling   <<<<<<<<<<"
 javac-algs4 $file

@@ -11,11 +11,6 @@ RUN curl -O https://algs4.cs.princeton.edu/code/algs4.jar       && \
     mv javac-algs4 /usr/local/bin                               && \
     mv java-algs4 /usr/local/bin
 
-
-# RUN chmod 755 javac-algs4 java-algs4 \
-#     && ln -s javac-algs4 /usr/local/bin \
-#     && ln -s java-algs4 /usr/local/bin
-
 # RUN unzip findbugs.zip \
 #     && chmod 755 findbugs-algs4 \
 #     && mv findbugs-algs4 /usr/local/bin
