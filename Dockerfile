@@ -11,13 +11,13 @@ RUN curl -O "https://algs4.cs.princeton.edu/code/algs4.jar"     && \
     mv javac-algs4 /usr/local/bin                               && \
     mv java-algs4 /usr/local/bin
 
-RUN curl -O "https://algs4.cs.princeton.edu/linux/checkstyle.zip"                         && \
-    curl -O "https://algs4.cs.princeton.edu/linux/checkstyle-suppressions.xml"            && \
-    curl -O "https://algs4.cs.princeton.edu/linux/checkstyle-{algs4,cos226,coursera}.xml" && \
-    curl -O "https://algs4.cs.princeton.edu/linux/checkstyle-{algs4,cos226,coursera}"     && \
-    unzip checkstyle.zip                                                                  && \
-    chmod 755 checkstyle-{algs4,cos226,coursera}                                          && \
-    mv checkstyle-{algs4,cos226,coursera} /usr/local/bin
+RUN curl -O "https://algs4.cs.princeton.edu/linux/checkstyle.zip"               && \
+    curl -O "https://algs4.cs.princeton.edu/linux/checkstyle-suppressions.xml"  && \
+    curl -O "https://algs4.cs.princeton.edu/linux/checkstyle-algs4.xml"         && \
+    curl -O "https://algs4.cs.princeton.edu/linux/checkstyle-algs4"             && \
+    unzip checkstyle.zip                                                        && \
+    chmod 755 checkstyle-algs4                                                  && \
+    mv checkstyle-algs4 /usr/local/bin
 
 # RUN unzip findbugs.zip \
 #     && chmod 755 findbugs-algs4 \
