@@ -8,7 +8,7 @@ RUN curl -O https://algs4.cs.princeton.edu/code/algs4.jar                       
     chmod 755 javac-algs4 java-algs4                                            && \
     mv javac-algs4 /usr/local/bin                                               && \
     mv java-algs4 /usr/local/bin                                                && \
-    echo 'export CLASSPATH=$CLASSPATH:/tmp/algs4/algs4.jar' >> ~/.bash_profile  && \
+    echo 'export CLASSPATH=$CLASSPATH:/tmp/algs4/algs4.jar' >> ~/.bash_profile
 
 
 
